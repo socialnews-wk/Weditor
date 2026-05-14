@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>위키트리 이미지 에디터 260514v3</title>
+<style>
+:root{--black:#171717;--yellow:#FACD2E;--yellow-dark:#e0b420}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Malgun Gothic','맑은 고딕',sans-serif;background:#f0f0f0;color:var(--black);min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding:12px}
+.wrap{width:100%;max-width:1300px;background:#fff;border-radius:12px;border:1px solid #ddd;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+
+/* 탭 */
+.tabs{display:flex;border-bottom:1px solid #e0e0e0;background:var(--black)}
+.tab{padding:13px 26px;font-size:14px;font-weight:600;cursor:pointer;border:none;background:transparent;color:rgba(255,255,255,.45);border-bottom:3px solid transparent;transition:all .2s}
+.tab.active{color:#fff;border-bottom-color:var(--yellow)}
+.panel{display:none;padding:20px 24px;flex-direction:column;gap:14px}
+.panel.active{display:flex}
+
+/* 공통 */
+.row{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.col{display:flex;flex-direction:column;gap:6px;flex:1;min-width:110px}
+.lbl{font-size:12px;color:#555;font-weight:600;display:block}
+.hint{font-size:11px;color:#aaa}
+.sep{height:1px;background:#e8e8e8;margin:2px 0}
+.size-badge{font-size:11px;color:#888;margin-top:2px}
+
+/* 업로드 존 */
+.upload-zone{border:1.5px dashed #ccc;border-radius:8px;padding:16px;text-align:center;cursor:pointer;transition:all .2s;background:#fafafa}
+.upload-zone:hover{border-color:var(--yellow-dark);background:#fffdf0}
+.upload-zone .ico{font-size:28px;display:block;margin-bottom:6px}
+.upload-zone p{font-size:12px;color:#888}
+.upload-zone.done{border-style:solid;border-color:#bbb;background:#f9f9f9}
+.upload-zone-wrap{position:relative;display:block}
+.del-btn{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,0.45);border:none;color:#fff;font-size:13px;line-height:1;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10;padding:0}
+.del-btn:hover{background:rgba(200,30,30,0.8)}
+.upload-zone.done + .del-btn{display:flex}
+.two-up{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.slot-label{font-size:11px;font-weight:600;color:#888;margin-bottom:5px}
+input[type=file]{visibility:hidden;position:absolute;width:1px;height:1px;overflow:hidden}
+
+/* 버튼류 */
+.mode-btns{display:flex;gap:4px;flex-wrap:wrap}
+.mode-btn{padding:7px 13px;font-size:12px;border:1px solid #ddd;border-radius:7px;background:#fff;color:#555;cursor:pointer;transition:all .15s;white-space:nowrap;font-weight:500}
+.mode-btn:hover{background:#fdf8e0;border-color:var(--yellow-dark)}
+.mode-btn.active{background:var(--yellow);color:var(--black);border-color:var(--yellow-dark);font-weight:700}
+
+/* 9방향 그리드 */
+.grid9{display:grid;grid-template-columns:repeat(3,52px);grid-template-rows:repeat(3,52px);gap:4px;flex-shrink:0}
+.g9btn{width:52px;height:52px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;transition:all .15s;color:#444}
+.g9btn:hover{background:#fdf8e0;border-color:var(--yellow-dark)}
+.g9btn.active{background:var(--yellow);color:var(--black);border-color:var(--yellow-dark);font-weight:700}
+
+/* 크기 버튼 */
+.size-btns{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.size-stepper{display:flex;align-items:center;gap:0}
+.size-stepper-btn{width:36px;height:36px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:18px;font-weight:700;color:#444;display:flex;align-items:center;justify-content:center;transition:all .15s;line-height:1;user-select:none}
+.size-stepper-btn:first-child{border-radius:8px 0 0 8px}
+.size-stepper-btn:last-child{border-radius:0 8px 8px 0}
+.size-stepper-btn:hover{background:#fdf8e0;border-color:var(--yellow-dark)}
+.size-stepper-btn:disabled{opacity:.3;cursor:default;background:#f5f5f5}
+.size-stepper-label{min-width:68px;height:36px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#333;background:#fafafa;padding:0 6px}
+.size-stepper-label small{font-size:10px;color:#aaa;font-weight:400}
+
+/* 컨트롤 카드 */
+.ctrl-card{background:#fafafa;border:1px solid #e8e8e8;border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.ctrl-card .card-title{font-size:12px;font-weight:700;color:#444}
+.align-block{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
+.align-section{display:flex;flex-direction:column;gap:8px}
+
+/* 슬라이더 */
+.slider-row{display:flex;align-items:center;gap:8px}
+.slider-row input[type=range]{flex:1;accent-color:var(--yellow-dark)}
+.slider-row .val{font-size:12px;color:#555;min-width:38px;text-align:right}
+
+/* 하단 컨트롤 */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:4px}
+.info-bar{font-size:11px;color:#aaa;padding:6px 10px;background:#f5f5f5;border-radius:6px;border:1px solid #e8e8e8}
+.info-bar span{color:#444;font-weight:700}
+.btn-dl{padding:10px 20px;font-size:13px;font-weight:700;border:none;border-radius:8px;background:var(--yellow);color:var(--black);cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s}
+.btn-dl:hover{background:var(--yellow-dark)}
+
+canvas{display:block;border-radius:8px;border:1px solid #e0e0e0;max-width:100%;background:#e8e8e8}
+
+/* 미세조정 패드 */
+.nudge9{display:grid;grid-template-columns:repeat(3,44px);grid-template-rows:repeat(3,44px);gap:4px}
+.nudge-btn{width:44px;height:44px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;color:#333;transition:all .15s}
+.nudge-btn:hover{background:#fdf8e0;border-color:var(--yellow-dark)}
+.nudge-reset{font-size:16px;color:#bbb}
+.nudge-reset:hover{color:#333;background:#f5f5f5}
+
+/* 워터마크 카드 */
+.wm-card{background:#fafafa;border:1px solid #e8e8e8;border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.wm-opt{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.wm-opt input[type=checkbox]{width:16px;height:16px;accent-color:var(--yellow-dark);cursor:pointer}
+.wm-opt label{font-size:13px;color:#333;font-weight:500;cursor:pointer}
+.wm-sel{padding:5px 8px;font-size:12px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#444;cursor:pointer;outline:none}
+.wm-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.wm-lbl{font-size:11px;color:#888;font-weight:600;white-space:nowrap}
+
+/* 사용 가이드 */
+.guide-step{display:flex;gap:10px;align-items:flex-start}
+.guide-num{min-width:24px;height:24px;border-radius:50%;background:var(--yellow);color:var(--black);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.guide-text{font-size:12px;color:rgba(255,255,255,0.75);line-height:1.6}
+.guide-text strong{color:#fff}
+.guide-text em{color:var(--yellow);font-style:normal}
+
+/* ── 2열 레이아웃 ── */
+.split-layout{display:flex;align-items:stretch}
+.split-left{flex:1;min-width:0;border-right:1px solid #e8e8e8;box-sizing:border-box;background:#fff}
+.split-right{flex:1;min-width:0;padding:24px;background:#f5f5f5;display:flex;flex-direction:column;gap:16px;box-sizing:border-box}
+.preview-label{font-size:13px;font-weight:700;color:#444}
+.preview-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#thumb-preview-area,#body-preview-area{display:flex;flex-direction:column;gap:10px}
+@media(max-width:700px){
+  .split-layout{flex-direction:column}
+  .split-left{width:100%;border-right:none;border-bottom:1px solid #e8e8e8}
+}
+
+/* 영역 블러 도구 */
+.blur-tool-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 10px;background:#fff8e0;border:1px solid #f0d060;border-radius:8px}
+.blur-tool-bar .lbl{font-size:12px;color:#555;font-weight:600;white-space:nowrap}
+.tool-btn{padding:6px 12px;font-size:12px;font-weight:500;border:1px solid #ddd;border-radius:6px;background:#fff;color:#444;cursor:pointer;transition:all .15s;white-space:nowrap}
+.tool-btn:hover{background:#f5f5f5}
+.tool-btn.active{background:var(--yellow);color:var(--black);border-color:var(--yellow-dark);font-weight:700}
+.tool-btn.danger{border-color:#e88;color:#c33}
+.tool-btn.danger:hover{background:#fee}
+.blur-strength-row{display:flex;align-items:center;gap:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div id="guide-banner" style="background:var(--black);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+  <div style="display:flex;align-items:center;gap:10px">
+    <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAwcIAAYJ/8QAMRAAAQMDAgUBBAsAAAAAAAAAAQIDBAAFEQYSBxMUIVEiIzJBYQgVFhgxQlZxgZTS/8QAFgEBAQEAAAAAAAAAAAAAAAAABAUD/8QAJhEAAQMDAgUFAAAAAAAAAAAAAQIEEQADBRITQUJRcYEGMaGx4f/aAAwDAQACEQMRAD8AletXXcLGrfPvztjnxorjtya5UF19AIalJIU1nP5VqTy1D4hdOPh9E0xbtTRHnLDb/q6asNLbkRkrLbchZLJO4e80+l2Mo/NvPwqRkMsGZUNBJAnv++4ApVltuwZipurV6A/ZHSn6Ysv9Br/NSF9IO8Wq5cRZcOxwYUS32wdInpmUthxxJ9oo7R39WUj5JHmp2G9SjK3zaRaIAEkzWzpgWyNRVNL5lxxl5DzS1IcQoKQpJwUkdwRTk1TqdpzRqdRM8tLl2ZdKUbTtEhYSiY1290hxLEpHfsSrzSYo5lyTBTBL7hiodU8lrd6QsgAqx5wkD+KtO2SXK0KPKfjp9eJ60W1dNsEdarSRxYb+7+NXpeSLutroQkfiJmNpOP29pjxUiqUpSipRKlE5JJ7k0Yy5RgiDz3OlDpeDW707yMbsecDGaBRcTh7WM3NvnVPYcB4rRy6U406uAr//2Q==" style="width:24px;height:24px;object-fit:contain;flex-shrink:0">
+    <div>
+      <div style="font-size:13px;font-weight:700;color:var(--yellow)">위키트리 CMS 이미지 에디터 사용법</div>
+      <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:2px">JPG · PNG · WebP 지원 · 클릭하거나 드래그로 이미지 업로드</div>
+    </div>
+  </div>
+  <button onclick="toggleGuide()" style="padding:6px 12px;font-size:11px;font-weight:600;border:1px solid rgba(255,255,255,0.3);border-radius:6px;background:transparent;color:#fff;cursor:pointer">사용법 보기 ▼</button>
+</div>
+
+<div id="guide-detail" style="display:none;background:#1e1e1e;padding:16px 20px;border-bottom:1px solid #333">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+<div class="guide-step">
+      <div class="guide-num">1</div>
+      <div class="guide-text"><strong>이미지 업로드</strong><br>업로드 박스를 클릭하거나 이미지를 드래그해서 넣으세요. 1장 또는 2장 선택 가능.</div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-num">2</div>
+      <div class="guide-text"><strong>여백 채우기</strong><br>이미지가 작으면 <em>블러 확장</em> 추천. 단색은 배경색으로 여백을 채웁니다.</div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-num">3</div>
+      <div class="guide-text"><strong>크기 · 위치 조정</strong><br>크기 버튼으로 단계 조절, 화살표 패드로 위치를 미세하게 맞추세요.</div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-num">4</div>
+      <div class="guide-text"><strong>워터마크</strong><br>필요 시 위키트리 로고를 켜고 위치를 선택하세요.</div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-num">5</div>
+      <div class="guide-text"><strong>영역 블러</strong><br><em>영역 선택</em> ON → 빈 곳 드래그로 블러 영역 추가. 기존 영역 위 드래그로 이동. 우상단 <strong>✕</strong> 개별 삭제. <em>초기화</em>로 전체 제거. 버튼 다시 누르면 OFF.</div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-num">6</div>
+      <div class="guide-text"><strong>다운로드</strong><br>미리보기 확인 후 다운로드 버튼을 누르면 완성 파일이 저장됩니다. 파일명은 날짜·시간으로 자동 생성됩니다.</div>
+    </div>
+  </div>
+  <div style="margin-top:12px;padding:10px 12px;background:rgba(250,205,46,0.12);border-radius:6px;border-left:3px solid var(--yellow)">
+    <span style="font-size:11px;color:rgba(255,255,255,0.75)">
+      💡 <strong style="color:var(--yellow)">섬네일 규격</strong> 1200×630 / 676px &nbsp;|&nbsp;
+      <strong style="color:var(--yellow)">본문 규격</strong> 가로 1200px · 가로/세로 자유 조절 &nbsp;|&nbsp;
+      <strong style="color:var(--yellow)">지원 포맷</strong> JPG, PNG, WebP
+    </span>
+  </div>
+</div>
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('thumb')">📷 섬네일</button>
+    <button class="tab" onclick="switchTab('body')">📄 본문 이미지</button>
+  </div>
+  <div class="split-layout">
+    <div class="split-left">
+<!-- ===== 섬네일 패널 ===== -->
+  <div class="panel active" id="panel-thumb">
+    <div class="row">
+      <div class="col" style="max-width:160px">
+        <span class="lbl">섬네일 규격</span>
+        <div class="mode-btns">
+          <button class="mode-btn active" id="ratio-630" onclick="setThumbRatio(630)">1200×630</button>
+          <button class="mode-btn" id="ratio-676" onclick="setThumbRatio(676)">1200×676</button>
+        </div>
+      </div>
+      <div class="col" style="max-width:140px">
+        <span class="lbl">이미지 장수</span>
+        <div class="mode-btns">
+          <button class="mode-btn active" id="cnt1" onclick="setThumbCount(1)">1장</button>
+          <button class="mode-btn" id="cnt2" onclick="setThumbCount(2)">2장</button>
+        </div>
+      </div>
+      <div class="col">
+        <span class="lbl">여백 채우기</span>
+        <div class="mode-btns">
+          <button class="mode-btn active" id="fill-blur" onclick="setFillMode('blur')">블러 확장</button>
+          <button class="mode-btn" id="fill-color" onclick="setFillMode('color')">단색</button>
+        </div>
+        <span class="hint" id="fill-hint">원본 유지 + 양옆 블러 처리 — 화질 손실 없음</span>
+      </div>
+      <div class="col" id="color-pick-wrap" style="max-width:90px;display:none">
+        <span class="lbl">배경색</span>
+        <input type="color" id="bgColor" value="#ffffff" oninput="renderThumb()" style="width:44px;height:34px;border:1px solid #ddd;border-radius:5px;cursor:pointer">
+      </div>
+    </div>
+
+    <div class="row" id="blur-row">
+      <div class="col">
+        <span class="lbl">블러 강도</span>
+        <div class="slider-row">
+          <input type="range" id="blurAmt" min="5" max="60" value="25" oninput="rt()">
+          <span class="val" id="blurAmt-v">25</span>
+        </div>
+      </div>
+      <div class="col">
+        <span class="lbl">밝기 보정</span>
+        <div class="slider-row">
+          <input type="range" id="blurBright" min="60" max="140" value="100" oninput="rt()">
+          <span class="val" id="blurBright-v">100%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-up">
+      <div>
+        <p style="font-size:11px;color:#c0392b;font-weight:600;margin-bottom:4px">✔️ 단일: 가로 1200px↑ / 2장 나란히: 600px↑</p>
+        <div class="slot-label">이미지 1</div>
+        <div class="upload-zone-wrap">
+          <div class="upload-zone" onclick="triggerUpload('t1')" id="zone-t1">
+            <span class="ico">🖼️</span><p>클릭하거나 이미지를 드래그<br><small style="font-size:10px;color:#bbb">JPG / PNG / WebP</small></p>
+          </div>
+          <button class="del-btn" id="del-t1" onclick="deleteImage('t1',0,'thumbImgs','renderThumb')" title="이미지 삭제">✕</button>
+        </div>
+        <input type="file" id="file-t1" accept="image/*" onchange="loadThumbImage(event,0)">
+      </div>
+      <div id="slot2-wrap" style="display:none">
+        <p style="font-size:11px;color:transparent;font-weight:600;margin-bottom:4px;user-select:none">.</p>
+        <div class="slot-label">이미지 2</div>
+        <div class="upload-zone-wrap">
+          <div class="upload-zone" onclick="triggerUpload('t2')" id="zone-t2">
+            <span class="ico">🖼️</span><p>클릭하거나 이미지를 드래그<br><small style="font-size:10px;color:#bbb">JPG / PNG / WebP</small></p>
+          </div>
+          <button class="del-btn" id="del-t2" onclick="deleteImage('t2',1,'thumbImgs','renderThumb')" title="이미지 삭제">✕</button>
+        </div>
+        <input type="file" id="file-t2" accept="image/*" onchange="loadThumbImage(event,1)">
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div id="thumb-align-controls" style="display:none;flex-direction:column;gap:10px">
+      <div style="display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap">
+        <div class="ctrl-card" style="flex:1;min-width:200px">
+          <div class="card-title">이미지 1 — 위치 / 크기</div>
+          <div class="align-block">
+            <div class="align-section"><span class="lbl">크기</span><div class="size-btns" id="sz-t1"></div></div>
+            <div class="align-section"><span class="lbl">위치</span><div id="nudge-t1"></div></div>
+          </div>
+        </div>
+        <div class="ctrl-card" id="t2-ctrl-card" style="display:none;flex:1;min-width:200px">
+          <div class="card-title">이미지 2 — 위치 / 크기</div>
+          <div class="align-block">
+            <div class="align-section"><span class="lbl">크기</span><div class="size-btns" id="sz-t2"></div></div>
+            <div class="align-section"><span class="lbl">위치</span><div id="nudge-t2"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 워터마크 옵션 -->
+    <div class="wm-card">
+      <span class="lbl">워터마크</span>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="wm-row">
+          <div class="wm-opt"><input type="checkbox" id="wm-logo-t" onchange="renderThumb()"><label for="wm-logo-t">위키트리 로고</label></div>
+          <div class="wm-opt">
+            <span class="wm-lbl">위치</span>
+            <select id="wm-logo-pos-t" onchange="renderThumb()" class="wm-sel">
+              <option value="rb">우측 하단</option>
+              <option value="lb">좌측 하단</option>
+              <option value="rt">우측 상단</option>
+              <option value="lt">좌측 상단</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== 본문 이미지 패널 ===== -->
+  <div class="panel" id="panel-body">
+    <div class="row">
+      <div class="col" style="max-width:160px">
+        <span class="lbl">레이아웃</span>
+        <div class="mode-btns">
+          <button class="mode-btn active" id="bmode-single" onclick="setBodyMode('single')">단일</button>
+          <button class="mode-btn" id="bmode-side" onclick="setBodyMode('side-by-side')">2장 나란히</button>
+        </div>
+      </div>
+      <div class="col">
+        <span class="lbl">여백 채우기</span>
+        <div class="mode-btns">
+          <button class="mode-btn active" id="bfill-blur" onclick="setBFill('blur')">블러 확장</button>
+          <button class="mode-btn" id="bfill-color" onclick="setBFill('color')">단색</button>
+        </div>
+      </div>
+      <div class="col" id="bcolor-wrap" style="max-width:90px;display:none">
+        <span class="lbl">배경색</span>
+        <input type="color" id="bgColorB" value="#ffffff" oninput="renderBody()" style="width:44px;height:34px;border:1px solid #ddd;border-radius:5px;cursor:pointer">
+      </div>
+    </div>
+
+    <div class="row" id="b-blur-row">
+      <div class="col">
+        <span class="lbl">블러 강도</span>
+        <div class="slider-row">
+          <input type="range" id="bBlurAmt" min="5" max="60" value="25" oninput="renderBody()">
+          <span class="val" id="bBlurAmt-v">25</span>
+        </div>
+      </div>
+      <div class="col">
+        <span class="lbl">밝기</span>
+        <div class="slider-row">
+          <input type="range" id="bBlurBright" min="60" max="140" value="100" oninput="renderBody()">
+          <span class="val" id="bBlurBright-v">100%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <span class="lbl">가로 (px)</span>
+        <div class="slider-row">
+          <input type="range" id="bodyW" min="600" max="1200" value="1200" oninput="renderBody()">
+          <span class="val" id="bodyW-v">1200</span>
+          <button onclick="document.getElementById('bodyW').value=1200;renderBody();" style="padding:4px 10px;font-size:11px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#666;cursor:pointer;white-space:nowrap;flex-shrink:0">초기화</button>
+        </div>
+      </div>
+      <div class="col">
+        <span class="lbl">세로 (px)</span>
+        <div class="slider-row">
+          <input type="range" id="bodyH" min="400" max="2400" value="630" oninput="renderBody()">
+          <span class="val" id="bodyH-v">630</span>
+          <button onclick="document.getElementById('bodyH').value=bodyNativeH||630;renderBody();" style="padding:4px 10px;font-size:11px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#666;cursor:pointer;white-space:nowrap;flex-shrink:0">초기화</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-up">
+      <div>
+        <p style="font-size:11px;color:#c0392b;font-weight:600;margin-bottom:4px">✔️ 단일: 가로 1200px↑ / 2장 나란히: 600px↑</p>
+        <div class="slot-label">이미지 1</div>
+        <div class="upload-zone-wrap">
+          <div class="upload-zone" onclick="triggerUpload('b1')" id="zone-b1">
+            <span class="ico">🖼️</span><p>클릭하거나 이미지를 드래그<br><small style="font-size:10px;color:#bbb">JPG / PNG / WebP</small></p>
+          </div>
+          <button class="del-btn" id="del-b1" onclick="deleteImage('b1',0,'bodyImgs','renderBody')" title="이미지 삭제">✕</button>
+        </div>
+        <input type="file" id="file-b1" accept="image/*" onchange="loadBodyImage(event,0)">
+      </div>
+      <div id="body-slot2" style="display:none">
+        <p style="font-size:11px;color:transparent;font-weight:600;margin-bottom:4px;user-select:none">.</p>
+        <div class="slot-label">이미지 2 (세로형)</div>
+        <div class="upload-zone-wrap">
+          <div class="upload-zone" onclick="triggerUpload('b2')" id="zone-b2">
+            <span class="ico">🖼️</span><p>클릭하거나 이미지를 드래그<br><small style="font-size:10px;color:#bbb">JPG / PNG / WebP</small></p>
+          </div>
+          <button class="del-btn" id="del-b2" onclick="deleteImage('b2',1,'bodyImgs','renderBody')" title="이미지 삭제">✕</button>
+        </div>
+        <input type="file" id="file-b2" accept="image/*" onchange="loadBodyImage(event,1)">
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div id="body-align-controls" style="display:none;flex-direction:column;gap:10px">
+      <div style="display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap">
+        <div class="ctrl-card" style="flex:1;min-width:200px">
+          <div class="card-title">이미지 1 — 위치 / 크기</div>
+          <div class="align-block">
+            <div class="align-section"><span class="lbl">크기</span><div class="size-btns" id="sz-b1"></div></div>
+            <div class="align-section"><span class="lbl">위치</span><div id="nudge-b1"></div></div>
+          </div>
+        </div>
+        <div class="ctrl-card" id="b2-ctrl-card" style="display:none;flex:1;min-width:200px">
+          <div class="card-title">이미지 2 — 위치 / 크기</div>
+          <div class="align-block">
+            <div class="align-section"><span class="lbl">크기</span><div class="size-btns" id="sz-b2"></div></div>
+            <div class="align-section"><span class="lbl">위치</span><div id="nudge-b2"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 워터마크 옵션 -->
+    <div class="wm-card">
+      <span class="lbl">워터마크</span>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="wm-row">
+          <div class="wm-opt"><input type="checkbox" id="wm-logo-b" onchange="renderBody()"><label for="wm-logo-b">위키트리 로고</label></div>
+          <div class="wm-opt">
+            <span class="wm-lbl">위치</span>
+            <select id="wm-logo-pos-b" onchange="renderBody()" class="wm-sel">
+              <option value="rb">우측 하단</option>
+              <option value="lb">좌측 하단</option>
+              <option value="rt">우측 상단</option>
+              <option value="lt">좌측 상단</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </div>
+  <div class="split-right">
+    <div class="preview-label-area">
+      <span class="preview-label" id="preview-label">섬네일 미리보기</span>
+    </div>
+
+    <!-- 섬네일 캔버스+컨트롤 -->
+    <div id="thumb-preview-area">
+    <div class="blur-tool-bar" id="blur-tool-t">
+      <span class="lbl">영역 블러</span>
+      <button class="tool-btn" id="btool-draw-t" onclick="setBlurMode('t','draw')">영역 선택</button>
+      <div class="blur-strength-row">
+        <span class="lbl">강도</span>
+        <input type="range" id="blur-str-t" min="5" max="40" value="15" style="width:70px;accent-color:#e0b420">
+        <span id="blur-str-t-v" style="font-size:11px;color:#666">15</span>
+      </div>
+      <button class="tool-btn danger" onclick="clearBlurZones('t')">초기화</button>
+    </div>
+
+<span class="lbl">미리보기</span>
+    <canvas id="thumbCanvas" width="800" height="420" style="width:100%"></canvas>
+
+    <div class="controls">
+      <div class="info-bar" id="thumb-ratio-info">섬네일: <span>1200 × 630px</span></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="lbl" style="margin:0">품질</span>
+        <input type="range" id="thumbQ" min="50" max="100" value="88" style="width:90px;accent-color:#e0b420" oninput="updateQLabel()">
+        <span id="thumbQ-v" style="font-size:12px;color:#666">88</span>
+      </div>
+      <button class="btn-dl" id="btn-dl-thumb" onclick="downloadThumb()">다운로드</button>
+    </div>
+    <div class="size-badge" id="thumb-size-est"></div>
+    </div>
+
+    <!-- 본문 캔버스+컨트롤 -->
+    <div id="body-preview-area" style="display:none">
+    <div class="blur-tool-bar" id="blur-tool-b">
+      <span class="lbl">영역 블러</span>
+      <button class="tool-btn" id="btool-draw-b" onclick="setBlurMode('b','draw')">영역 선택</button>
+      <div class="blur-strength-row">
+        <span class="lbl">강도</span>
+        <input type="range" id="blur-str-b" min="5" max="40" value="15" style="width:70px;accent-color:#e0b420">
+        <span id="blur-str-b-v" style="font-size:11px;color:#666">15</span>
+      </div>
+      <button class="tool-btn danger" onclick="clearBlurZones('b')">초기화</button>
+    </div>
+<span class="lbl">미리보기</span>
+    <canvas id="bodyCanvas" width="800" height="533" style="width:100%"></canvas>
+
+    <div class="controls">
+      <div class="info-bar" id="body-info" style="display:none">본문: <span>1200 × 800px</span></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <span class="lbl" style="margin:0">품질</span>
+        <input type="range" id="bodyQ" min="50" max="100" value="90" style="display:none;width:90px;accent-color:#e0b420" oninput="updateBodyQ()">
+        <span id="bodyQ-v" style="font-size:12px;color:#666;display:none">90</span>
+      </div>
+      <button class="btn-dl" id="btn-dl-body" onclick="downloadBody()" style="display:none">다운로드</button>
+    </div>
+    <div class="size-badge" id="body-size-est" style="display:none"></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script>
+const THUMB_W=1200;
+var bodyNativeH=630; // 업로드된 이미지의 원본 비율 기준 높이
+var THUMB_H=630;
+let thumbCount=1,thumbImgs=[null,null];
+let fillMode='blur';
+let bodyMode='single',bodyImgs=[null,null],bFill='blur';
+
+const state={t1:{align:4,size:0,ox:0,oy:0},t2:{align:4,size:0,ox:0,oy:0},b1:{align:4,size:0,ox:0,oy:0},b2:{align:4,size:0,ox:0,oy:0}};
+const DIR_CHARS=['\u2196','\u2191','\u2197','\u2190','\u00B7','\u2192','\u2199','\u2193','\u2198'];
+const DIR_LABELS=['좌상','위','우상','좌','가운데','우','좌하','아래','우하'];
+const SIZE_DEFS=[
+  {label:'딱 맞게',scale:'fit'},
+  {label:'채우기',scale:'cover'},
+  {label:'약간 크게',scale:1.15},
+  {label:'크게',scale:1.35}
+];
+
+// ===== 워터마크 =====
+var WM_OPACITY = 0.55;
+var WM_MARGIN = 16; // 실제 출력 px 기준
+var wmImg = new Image();
+wmImg.src = "data:image/png;base64,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";
+
+function chk(id){if(!id) return false; var el=document.getElementById(id); return el?el.checked:false;}
+function sel(id){return document.getElementById(id).value;}
+
+function getPosXY(pos, W, H, itemW, itemH, mg){
+  var x, y;
+  if(pos==='rb'){ x=W-mg-itemW; y=H-mg-itemH; }
+  else if(pos==='lb'){ x=mg; y=H-mg-itemH; }
+  else if(pos==='rt'){ x=W-mg-itemW; y=mg; }
+  else { x=mg; y=mg; } // lt
+  return {x:x, y:y};
+}
+
+// 로고: 이미 배경 제거 + 흰색 처리된 PNG를 직접 사용
+function getWmProcessed(){
+  if(!wmImg.complete || wmImg.naturalWidth===0) return null;
+  return wmImg;
+}
+
+// W,H: 실제 출력 캔버스 기준 크기, 로고/AI 위치 각각 독립
+function drawWatermark(ctx, W, H, logoId, logoPosId){
+  if(!chk(logoId)) return;
+  var mg = Math.round(W * 0.03);
+  mg = Math.max(16, mg);
+
+  var processed = getWmProcessed();
+  if(!processed) return;
+
+  ctx.save();
+
+  var logoW = Math.round(W * 0.1);
+  logoW = Math.max(60, Math.min(logoW, 140));
+  var logoH = Math.round(logoW * wmImg.naturalHeight / wmImg.naturalWidth);
+  var lpos = sel(logoPosId);
+  var lxy = getPosXY(lpos, W, H, logoW, logoH, mg);
+
+  ctx.globalAlpha = WM_OPACITY;
+  ctx.drawImage(processed, lxy.x, lxy.y, logoW, logoH);
+
+  ctx.restore();
+}
+// ===== 워터마크 끝 =====
+
+
+function alignToAnchor(pos){return{ax:(pos%3)*0.5,ay:Math.floor(pos/3)*0.5};}
+
+function buildGrid(gridId,key,renderFn){
+  var g=document.getElementById(gridId);
+  if(!g)return;
+  g.innerHTML='';
+  for(var i=0;i<9;i++){
+    (function(idx){
+      var b=document.createElement('button');
+      b.className='g9btn'+(state[key].align===idx?' active':'');
+      b.textContent=DIR_CHARS[idx];
+      b.title=DIR_LABELS[idx];
+      b.onclick=function(){state[key].align=idx;state[key].ox=0;state[key].oy=0;buildGrid(gridId,key,renderFn);buildNudge('nudge-'+key,key,renderFn);renderFn();};
+      g.appendChild(b);
+    })(i);
+  }
+}
+
+function buildNudge(nudgeId, key, renderFn){
+  var c=document.getElementById(nudgeId);
+  if(!c)return;
+  // 스텝: 실제 출력 기준 10px (미리보기 스케일 무시하고 state에 직접 저장)
+  var STEP=10/1200; // 1200px 기준 10px를 비율로 저장
+  var dirs=[
+    {label:'↖',dx:-1,dy:-1},{label:'↑',dx:0,dy:-1},{label:'↗',dx:1,dy:-1},
+    {label:'←',dx:-1,dy:0},{label:'↺',dx:0,dy:0,reset:true},{label:'→',dx:1,dy:0},
+    {label:'↙',dx:-1,dy:1},{label:'↓',dx:0,dy:1},{label:'↘',dx:1,dy:1}
+  ];
+  c.innerHTML='';
+  var grid=document.createElement('div');
+  grid.className='nudge9';
+  dirs.forEach(function(d){
+    var b=document.createElement('button');
+    b.className='nudge-btn'+(d.reset?' nudge-reset':'');
+    b.textContent=d.label;
+    b.title=d.reset?'원위치':'미세조정';
+    b.onclick=function(){
+      if(d.reset){state[key].ox=0;state[key].oy=0;state[key].align=4;}
+      else{state[key].ox=(state[key].ox||0)+d.dx*STEP;state[key].oy=(state[key].oy||0)+d.dy*STEP;}
+      renderFn();
+    };
+    grid.appendChild(b);
+  });
+  c.appendChild(grid);
+}
+
+function buildSizeBtns(sizeId,key,renderFn){
+  var c=document.getElementById(sizeId);
+  if(!c)return;
+  var cur=state[key].size;
+  var def=SIZE_DEFS[cur];
+  var wrap=document.createElement('div');
+  wrap.className='size-stepper';
+  // - 버튼
+  var btnM=document.createElement('button');
+  btnM.className='size-stepper-btn';
+  btnM.textContent='−';
+  btnM.disabled=(cur===0);
+  btnM.onclick=function(){if(state[key].size>0){state[key].size--;buildSizeBtns(sizeId,key,renderFn);renderFn();}};
+  // 라벨
+  var lbl=document.createElement('div');
+  lbl.className='size-stepper-label';
+  var steps=['딱 맞게','채우기','약간 크게','크게'];
+  lbl.innerHTML=steps[cur]+'<small>'+(cur+1)+'/'+SIZE_DEFS.length+'</small>';
+  // + 버튼
+  var btnP=document.createElement('button');
+  btnP.className='size-stepper-btn';
+  btnP.textContent='+';
+  btnP.disabled=(cur===SIZE_DEFS.length-1);
+  btnP.onclick=function(){if(state[key].size<SIZE_DEFS.length-1){state[key].size++;buildSizeBtns(sizeId,key,renderFn);renderFn();}};
+  wrap.appendChild(btnM);
+  wrap.appendChild(lbl);
+  wrap.appendChild(btnP);
+  c.innerHTML='';
+  c.appendChild(wrap);
+}
+
+function initControls(key,renderFn){
+  buildSizeBtns('sz-'+key,key,renderFn);
+  buildNudge('nudge-'+key,key,renderFn);
+}
+
+function switchTab(t){
+  document.querySelectorAll('.tab').forEach(function(b,i){b.classList.toggle('active',['thumb','body'][i]===t);});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+  document.getElementById('panel-'+t).classList.add('active');
+  var isThumb=(t==='thumb');
+  // 미리보기 영역 전환
+  document.getElementById('thumb-preview-area').style.display  = isThumb?'flex':'none';
+  document.getElementById('body-preview-area').style.display   = isThumb?'none':'flex';
+  document.getElementById('preview-label').textContent         = isThumb?'섬네일 미리보기':'본문 미리보기';
+  // 정보/품질/버튼/용량 전환
+  document.getElementById('thumb-ratio-info').style.display    = isThumb?'':'none';
+  document.getElementById('body-info').style.display           = isThumb?'none':'';
+  document.getElementById('thumbQ').style.display              = isThumb?'':'none';
+  document.getElementById('thumbQ-v').style.display            = isThumb?'':'none';
+  document.getElementById('bodyQ').style.display               = isThumb?'none':'';
+  document.getElementById('bodyQ-v').style.display             = isThumb?'none':'';
+  document.getElementById('btn-dl-thumb').style.display        = isThumb?'':'none';
+  document.getElementById('btn-dl-body').style.display         = isThumb?'none':'';
+  document.getElementById('thumb-size-est').style.display      = isThumb?'':'none';
+  document.getElementById('body-size-est').style.display       = isThumb?'none':'';
+  if(isThumb) renderThumb(); else renderBody();
+}
+
+function setThumbCount(n){
+  thumbCount=n;
+  document.getElementById('cnt1').classList.toggle('active',n===1);
+  document.getElementById('cnt2').classList.toggle('active',n===2);
+  document.getElementById('slot2-wrap').style.display=n===2?'block':'none';
+  document.getElementById('t2-ctrl-card').style.display=n===2?'flex':'none';
+  renderThumb();
+}
+
+function setFillMode(m){
+  fillMode=m;
+  ['blur','color'].forEach(function(x){document.getElementById('fill-'+x).classList.toggle('active',x===m);});
+  document.getElementById('color-pick-wrap').style.display=m==='color'?'flex':'none';
+  document.getElementById('blur-row').style.display=m==='blur'?'flex':'none';
+  var hints={blur:'원본 유지 + 양옆 블러 처리 — 화질 손실 없음',color:'단색 배경으로 여백 채우기'};
+  document.getElementById('fill-hint').textContent=hints[m];
+  renderThumb();
+}
+
+function setBFill(m){
+  bFill=m;
+  ['blur','color'].forEach(function(x){document.getElementById('bfill-'+x).classList.toggle('active',x===m);});
+  document.getElementById('bcolor-wrap').style.display=m==='color'?'flex':'none';
+  document.getElementById('b-blur-row').style.display=m==='blur'?'flex':'none';
+  renderBody();
+}
+
+function triggerUpload(id){
+  var el=document.getElementById('file-'+id);
+  if(!el)return;
+  try{el.value='';}catch(e){}
+  el.click();
+}
+
+function loadThumbImage(e,idx){
+  var f=e.target.files[0];if(!f)return;
+  readImageFile(f, function(img){
+    thumbImgs[idx]=img;
+    var z=document.getElementById('zone-t'+(idx+1));
+    z.className='upload-zone done';
+    z.innerHTML='<span class="ico">✅</span><p>'+f.name+'</p><p style="font-size:10px;color:#aaa">'+img.naturalWidth+'×'+img.naturalHeight+'px</p>';
+    document.getElementById('thumb-align-controls').style.display='flex';
+    initControls('t'+(idx+1),renderThumb);
+    renderThumb();
+  });
+}
+
+function loadBodyImage(e,idx){
+  var f=e.target.files[0];if(!f)return;
+  readImageFile(f, function(img){
+    bodyImgs[idx]=img;
+    var z=document.getElementById('zone-b'+(idx+1));
+    z.className='upload-zone done';
+    z.innerHTML='<span class="ico">✅</span><p>'+f.name+'</p><p style="font-size:10px;color:#aaa">'+img.naturalWidth+'×'+img.naturalHeight+'px</p>';
+    document.getElementById('body-align-controls').style.display='flex';
+    // 이미지1 업로드 시 원본 비율로 높이 자동 설정
+    if(idx===0){
+      // 원본 비율 기준 세로 계산 (가로 1200 기준)
+      var nativeH = Math.round(1200 * img.naturalHeight / img.naturalWidth);
+      nativeH = Math.max(400, Math.min(nativeH, 2400));
+      bodyNativeH = nativeH;
+      // 가로 슬라이더 1200으로 초기화
+      var sliderW = document.getElementById('bodyW');
+      sliderW.value = 1200;
+      document.getElementById('bodyW-v').textContent = 1200;
+      // 세로 슬라이더: 원본 높이로 설정, min은 원본의 50%
+      var sliderH = document.getElementById('bodyH');
+      sliderH.min = Math.max(400, Math.round(nativeH * 0.5));
+      sliderH.max = 2400;
+      sliderH.value = nativeH;
+      document.getElementById('bodyH-v').textContent = nativeH;
+    }
+    initControls('b'+(idx+1),renderBody);
+    renderBody();
+  });
+}
+
+function readImageFile(file, cb){
+  var reader=new FileReader();
+  reader.onload=function(ev){
+    var img=new Image();
+    img.onload=function(){cb(img);};
+    img.src=ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+// 드래그앤드롭 바인딩
+function bindDrop(zoneId, fileId, cb){
+  var zone=document.getElementById(zoneId);
+  if(!zone)return;
+  zone.addEventListener('dragover',function(e){e.preventDefault();zone.style.borderColor='var(--yellow-dark)';});
+  zone.addEventListener('dragleave',function(){zone.style.borderColor='';});
+  zone.addEventListener('drop',function(e){
+    e.preventDefault();zone.style.borderColor='';
+    var f=e.dataTransfer.files[0];
+    if(!f||!f.type.startsWith('image/'))return;
+    readImageFile(f,cb);
+    // 존 업데이트
+    var z=document.getElementById(zoneId);
+    z.className='upload-zone done';
+    z.innerHTML='<span class="ico">✅</span><p>'+f.name+'</p>';
+  });
+}
+
+function sv(id){return parseInt(document.getElementById(id).value);}
+
+function getDrawParams(key,zone,img){
+  var s=state[key],a=alignToAnchor(s.align);
+  var iw=img.naturalWidth,ih=img.naturalHeight,dw,dh;
+  if(SIZE_DEFS[s.size].scale==='fit'){
+    var sc=Math.min(zone.w/iw,zone.h/ih,1);dw=iw*sc;dh=ih*sc;
+  } else if(SIZE_DEFS[s.size].scale==='cover'){
+    // 영역을 완전히 채움 (여백 없음, 넘치는 부분은 clip)
+    var sc=Math.max(zone.w/iw,zone.h/ih);dw=iw*sc;dh=ih*sc;
+  } else {
+    var sc2=Math.min(zone.w/iw,zone.h/ih)*SIZE_DEFS[s.size].scale;dw=iw*sc2;dh=ih*sc2;
+  }
+  var ox=(s.ox||0)*zone.w, oy=(s.oy||0)*zone.h;
+  return{dx:zone.x+a.ax*(zone.w-dw)+ox,dy:zone.y+a.ay*(zone.h-dh)+oy,dw:dw,dh:dh};
+}
+
+function drawZone(ctx,img,zone,mode,key,blurAmt,blurBright,bgColor){
+  ctx.save();
+  ctx.beginPath();ctx.rect(zone.x,zone.y,zone.w,zone.h);ctx.clip();
+
+  if(mode==='color'){
+    ctx.fillStyle=bgColor||'#fff';ctx.fillRect(zone.x,zone.y,zone.w,zone.h);
+  } else {
+    // 블러 배경은 작은 캔버스에서 처리 후 확대 → 출력 크기 무관하게 일정한 블러 효과
+    var BLUR_SCALE = Math.min(1, 400 / Math.max(zone.w, zone.h));
+    var tw = Math.round(zone.w * BLUR_SCALE);
+    var th = Math.round(zone.h * BLUR_SCALE);
+    var tmp=document.createElement('canvas');tmp.width=tw;tmp.height=th;
+    var tc=tmp.getContext('2d');
+    var bs=Math.max(tw/img.naturalWidth,th/img.naturalHeight)*1.2;
+    tc.drawImage(img,(tw-img.naturalWidth*bs)/2,(th-img.naturalHeight*bs)/2,img.naturalWidth*bs,img.naturalHeight*bs);
+    if(blurBright!==100){
+      var br=blurBright/100;
+      tc.fillStyle=br>1?'rgba(255,255,255,'+Math.min((br-1)*1.5,.6)+')':'rgba(0,0,0,'+Math.min((1-br)*1.5,.6)+')';
+      tc.fillRect(0,0,tw,th);
+    }
+    var blurPx = Math.round(blurAmt * BLUR_SCALE * 0.9);
+    blurPx = Math.max(1, blurPx);
+    ctx.filter='blur('+blurPx+'px)';
+    ctx.drawImage(tmp, zone.x - blurAmt, zone.y - blurAmt, zone.w + blurAmt*2, zone.h + blurAmt*2);
+    ctx.filter='none';
+  }
+  var p=getDrawParams(key,zone,img);
+  ctx.globalAlpha=1;ctx.drawImage(img,p.dx,p.dy,p.dw,p.dh);
+  ctx.restore();
+}
+
+function rt(){
+  document.getElementById('blurAmt-v').textContent=sv('blurAmt');
+  document.getElementById('blurBright-v').textContent=sv('blurBright')+'%';
+  renderThumb();
+}
+
+function ph(ctx,x,y,msg){ctx.fillStyle='#bbb';ctx.font='13px sans-serif';ctx.textAlign='center';ctx.fillText(msg,x,y);}
+
+function renderThumb(dragStart, dragCur){
+  var canvas=document.getElementById('thumbCanvas');
+  var ctx=canvas.getContext('2d');
+  // THUMB_H 변경 시 캔버스 높이 동기화
+  canvas.height=Math.round(canvas.width*THUMB_H/THUMB_W);
+  var W=canvas.width,H=canvas.height,sx=W/THUMB_W;
+  var blurAmt=sv('blurAmt')*sx,blurBright=sv('blurBright');
+  var bgColor=document.getElementById('bgColor').value;
+  ctx.clearRect(0,0,W,H);ctx.fillStyle='#e0e0e0';ctx.fillRect(0,0,W,H);
+  if(thumbCount===1){
+    if(thumbImgs[0]) drawZone(ctx,thumbImgs[0],{x:0,y:0,w:W,h:H},fillMode,'t1',blurAmt,blurBright,bgColor);
+    else ph(ctx,W/2,H/2,'이미지를 업로드하세요');
+  } else {
+    var hw=W/2;
+    if(thumbImgs[0]) drawZone(ctx,thumbImgs[0],{x:0,y:0,w:hw,h:H},fillMode,'t1',blurAmt,blurBright,bgColor);
+    else ph(ctx,hw/2,H/2,'이미지 1');
+    if(thumbImgs[1]) drawZone(ctx,thumbImgs[1],{x:hw,y:0,w:hw,h:H},fillMode,'t2',blurAmt,blurBright,bgColor);
+    else ph(ctx,hw+hw/2,H/2,'이미지 2');
+    
+  }
+  applyBlurZones(ctx,'t',W,H,dragStart,dragCur);
+  drawWatermark(ctx, W, H, 'wm-logo-t', 'wm-logo-pos-t');
+  estimateThumbSize();
+}
+
+function renderBody(dragStart, dragCur){
+  var canvas=document.getElementById('bodyCanvas');
+  var ctx=canvas.getContext('2d');
+  var bH=sv('bodyH'),bW=sv('bodyW')||1200;
+  var W=canvas.width, H=Math.round(W*bH/bW);
+  canvas.height=H;
+  var sx=W/bW,blurAmt=sv('bBlurAmt')*sx,blurBright=sv('bBlurBright');
+  var bgColor=document.getElementById('bgColorB').value;
+  document.getElementById('bBlurAmt-v').textContent=sv('bBlurAmt');
+  document.getElementById('bBlurBright-v').textContent=sv('bBlurBright')+'%';
+  document.getElementById('bodyH-v').textContent=bH;
+  if(document.getElementById('bodyW-v')) document.getElementById('bodyW-v').textContent=bW;
+  document.getElementById('body-info').innerHTML='본문: <span>'+bW+' \xd7 '+bH+'px</span>';
+  ctx.clearRect(0,0,W,H);ctx.fillStyle='#e0e0e0';ctx.fillRect(0,0,W,H);
+  if(bodyMode==='single'){
+    if(bodyImgs[0]) drawZone(ctx,bodyImgs[0],{x:0,y:0,w:W,h:H},bFill,'b1',blurAmt,blurBright,bgColor);
+    else ph(ctx,W/2,H/2,'이미지를 업로드하세요');
+  } else {
+    var hw=W/2;
+    if(bodyImgs[0]) drawZone(ctx,bodyImgs[0],{x:0,y:0,w:hw,h:H},bFill,'b1',blurAmt,blurBright,bgColor);
+    else ph(ctx,hw/2,H/2,'이미지 1');
+    if(bodyImgs[1]) drawZone(ctx,bodyImgs[1],{x:hw,y:0,w:hw,h:H},bFill,'b2',blurAmt,blurBright,bgColor);
+    else ph(ctx,hw+hw/2,H/2,'이미지 2');
+    
+  }
+  applyBlurZones(ctx,'b',W,H,dragStart,dragCur);
+  drawWatermark(ctx, W, H, 'wm-logo-b', 'wm-logo-pos-b');
+  estimateBodySize();
+}
+
+function estimateThumbSize(){
+  var canvas=document.getElementById('thumbCanvas');
+  var q=sv('thumbQ')/100;
+  var dataUrl=canvas.toDataURL('image/jpeg',q);
+  var bytes=(dataUrl.length-22)/1.37;
+  // 실제출력 픽셀수 / 미리보기 픽셀수 비율로 보정 (JPEG는 0.75승 근사)
+  var previewPx=canvas.width*canvas.height;
+  var realPx=THUMB_W*THUMB_H;
+  var estKb=Math.round(bytes*Math.pow(realPx/previewPx,0.75)/1024);
+  var ok=estKb<290;
+  document.getElementById('thumb-size-est').innerHTML='예상 용량: <strong style="color:'+(ok?'#2a7a2a':'#c0392b')+'">'+estKb+'KB</strong> '+(ok?'✓ 290KB 이하 (참고용)':'⚠ 초과 — 품질을 낮추세요 (참고용)');
+}
+
+function updateQLabel(){document.getElementById('thumbQ-v').textContent=sv('thumbQ');estimateThumbSize();}
+function updateBodyQ(){document.getElementById('bodyQ-v').textContent=sv('bodyQ');estimateBodySize();}
+
+function estimateBodySize(){
+  var el=document.getElementById('body-size-est');
+  if(!el) return;
+  var canvas=document.getElementById('bodyCanvas');
+  var bW=sv('bodyW')||1200,bH=sv('bodyH');
+  var q=sv('bodyQ')/100;
+  var dataUrl=canvas.toDataURL('image/jpeg',q);
+  var bytes=(dataUrl.length-22)/1.37;
+  var previewPx=canvas.width*canvas.height;
+  var realPx=bW*bH;
+  var estKb=Math.round(bytes*Math.pow(realPx/previewPx,0.75)/1024);
+  var ok=estKb<290;
+  el.innerHTML='예상 용량: <strong style="color:'+(ok?'#2a7a2a':'#c0392b')+'">'+estKb+'KB</strong> '+(ok?'✓ 290KB 이하 (참고용)':'⚠ 초과 — 품질을 낮추세요 (참고용)');
+}
+
+function renderFullCanvas(imgs,zones,keys,mode,W,H,blurAmt,blurBright,bgColor,logoId,logoPosId){
+  var c=document.createElement('canvas');c.width=W;c.height=H;
+  var ctx=c.getContext('2d');
+  ctx.fillStyle=bgColor||'#fff';ctx.fillRect(0,0,W,H);
+  zones.forEach(function(z,i){if(imgs[i]) drawZone(ctx,imgs[i],z,mode,keys[i],blurAmt,blurBright,bgColor);});
+  var panel=logoId&&logoId.indexOf('-t')>0?'t':'b';
+  applyBlurZonesOutput(ctx,panel,W,H);
+  if(logoId) drawWatermark(ctx,W,H,logoId,logoPosId);
+  return c;
+}
+
+function downloadThumb(){
+  if(!thumbImgs[0]&&!thumbImgs[1]){alert('이미지를 먼저 업로드하세요.');return;}
+  var blurAmt=sv('blurAmt')*(THUMB_W/800),blurBright=sv('blurBright'),bgColor=document.getElementById('bgColor').value;
+  var zones=thumbCount===1?[{x:0,y:0,w:THUMB_W,h:THUMB_H}]:[{x:0,y:0,w:600,h:THUMB_H},{x:600,y:0,w:600,h:THUMB_H}];
+  var keys=thumbCount===1?['t1']:['t1','t2'];
+  var c=renderFullCanvas(thumbImgs,zones,keys,fillMode,THUMB_W,THUMB_H,blurAmt,blurBright,bgColor,'wm-logo-t','wm-logo-pos-t');
+  var q=sv('thumbQ')/100,dataUrl=c.toDataURL('image/jpeg',q),bytes=(dataUrl.length-22)/1.37;
+  while(bytes>290*1024&&q>0.4){q-=0.05;dataUrl=c.toDataURL('image/jpeg',q);bytes=(dataUrl.length-22)/1.37;}
+  var a=document.createElement('a');
+  a.download=getFileName('thumb');
+  a.href=dataUrl;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){document.body.removeChild(a);},100);
+}
+
+function downloadBody(){
+  if(!bodyImgs[0]&&!bodyImgs[1]){alert('이미지를 먼저 업로드하세요.');return;}
+  var bH=sv('bodyH'),bW=sv('bodyW')||1200,blurAmt=sv('bBlurAmt')*(bW/800),blurBright=sv('bBlurBright'),bgColor=document.getElementById('bgColorB').value;
+  var zones=bodyMode==='single'?[{x:0,y:0,w:bW,h:bH}]:[{x:0,y:0,w:Math.round(bW/2),h:bH},{x:Math.round(bW/2),y:0,w:Math.round(bW/2),h:bH}];
+  var keys=bodyMode==='single'?['b1']:['b1','b2'];
+  var c=renderFullCanvas(bodyImgs,zones,keys,bFill,bW,bH,blurAmt,blurBright,bgColor,'wm-logo-b','wm-logo-pos-b');
+  var q=sv('bodyQ')/100,dataUrl=c.toDataURL('image/jpeg',q),bytes=(dataUrl.length-22)/1.37;
+  while(bytes>290*1024&&q>0.4){q-=0.05;dataUrl=c.toDataURL('image/jpeg',q);bytes=(dataUrl.length-22)/1.37;}
+  var a=document.createElement('a');
+  a.download=getFileName('body');
+  a.href=dataUrl;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){document.body.removeChild(a);},100);
+}
+
+function setBodyMode(m){
+  bodyMode=m;
+  document.getElementById('bmode-single').classList.toggle('active',m==='single');
+  document.getElementById('bmode-side').classList.toggle('active',m==='side-by-side');
+  document.getElementById('body-slot2').style.display=m==='side-by-side'?'block':'none';
+  document.getElementById('b2-ctrl-card').style.display=m==='side-by-side'?'flex':'none';
+  renderBody();
+}
+
+// 초기화
+document.addEventListener('DOMContentLoaded', function(){
+  initControls('t1',renderThumb);initControls('t2',renderThumb);
+  initControls('b1',renderBody);initControls('b2',renderBody);
+
+  bindDrop('zone-t1','file-t1',function(img){var mw=thumbCount===2?600:1200;if(img.naturalWidth<mw){alert('가로 '+mw+'px 이상의 이미지만 사용이 가능합니다.\n\n현재 이미지: '+img.naturalWidth+'×'+img.naturalHeight+'px');return;}thumbImgs[0]=img;document.getElementById('thumb-align-controls').style.display='flex';initControls('t1',renderThumb);renderThumb();});
+  bindDrop('zone-t2','file-t2',function(img){var mw=thumbCount===2?600:1200;if(img.naturalWidth<mw){alert('가로 '+mw+'px 이상의 이미지만 사용이 가능합니다.\n\n현재 이미지: '+img.naturalWidth+'×'+img.naturalHeight+'px');return;}thumbImgs[1]=img;document.getElementById('thumb-align-controls').style.display='flex';initControls('t2',renderThumb);renderThumb();});
+  bindDrop('zone-b1','file-b1',function(img){var mw=bodyMode==='side-by-side'?600:1200;if(img.naturalWidth<mw){alert('가로 '+mw+'px 이상의 이미지만 사용이 가능합니다.\n\n현재 이미지: '+img.naturalWidth+'×'+img.naturalHeight+'px');return;}bodyImgs[0]=img;document.getElementById('body-align-controls').style.display='flex';initControls('b1',renderBody);renderBody();});
+  bindDrop('zone-b2','file-b2',function(img){var mw=bodyMode==='side-by-side'?600:1200;if(img.naturalWidth<mw){alert('가로 '+mw+'px 이상의 이미지만 사용이 가능합니다.\n\n현재 이미지: '+img.naturalWidth+'×'+img.naturalHeight+'px');return;}bodyImgs[1]=img;document.getElementById('body-align-controls').style.display='flex';initControls('b2',renderBody);renderBody();});
+
+  renderThumb();renderBody();
+  bindCanvasEvents('thumbCanvas', renderThumb);
+  bindCanvasEvents('bodyCanvas', renderBody);
+  initPanEvents();
+  bindBlurEvents();
+});
+
+function getFileName(type){
+  var now=new Date();
+  var yy=String(now.getFullYear()).slice(2);
+  var mm=String(now.getMonth()+1).padStart(2,'0');
+  var dd=String(now.getDate()).padStart(2,'0');
+  var hh=String(now.getHours()).padStart(2,'0');
+  var mi=String(now.getMinutes()).padStart(2,'0');
+  var ss=String(now.getSeconds()).padStart(2,'0');
+  return yy+'_'+mm+'_'+dd+'_'+hh+'_'+mi+'_'+ss+'.jpg';
+}
+
+
+function deleteImage(slotId, idx, arr, renderFn){
+  if(arr==='thumbImgs') thumbImgs[idx]=null;
+  else bodyImgs[idx]=null;
+  var z=document.getElementById('zone-'+slotId);
+  z.className='upload-zone';
+  z.innerHTML='<span class="ico">🖼️</span><p>클릭하거나 이미지를 드래그<br><small style="font-size:10px;color:#bbb">JPG / PNG / WebP</small></p>';
+  document.getElementById('file-'+slotId).value='';
+  // 컨트롤 숨김 처리
+  if(arr==='thumbImgs'){
+    if(!thumbImgs[0]&&!thumbImgs[1]) document.getElementById('thumb-align-controls').style.display='none';
+    renderThumb();
+  } else {
+    if(!bodyImgs[0]&&!bodyImgs[1]) document.getElementById('body-align-controls').style.display='none';
+    renderBody();
+  }
+  // state offset 초기화
+  var key = (arr==='thumbImgs'?'t':'b')+(idx+1);
+  if(state[key]){state[key].ox=0;state[key].oy=0;state[key].align=4;state[key].size=0;}
+}
+
+// ═══════════════════════════════════
+// 영역 블러 기능
+// ═══════════════════════════════════
+var blurZones = {t:[], b:[]};
+var blurMode  = {t:'pan', b:'pan'};
+var blurDrag  = {t:null, b:null};   // {startX,startY,curX,curY} canvas px 기준
+var blurMove  = {t:null, b:null};   // {zoneIdx, startX,startY, origRx,origRy}
+var blurSelected = {t:-1, b:-1};   // 이동 모드에서 선택된 영역 인덱스
+
+function setBlurMode(panel, mode){
+  // 같은 버튼 다시 누르면 pan(해제)으로 토글
+  if(blurMode[panel] === mode && mode !== 'pan') mode = 'pan';
+  blurMode[panel] = mode;
+  document.getElementById('btool-draw-'+panel).classList.toggle('active', mode==='draw');
+  var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+  canvas.style.cursor = mode==='draw' ? 'crosshair' : 'grab';
+}
+
+function clearBlurZones(panel){
+  blurZones[panel] = [];
+  if(panel==='t') renderThumb(); else renderBody();
+}
+
+function getCanvasXY(canvas, clientX, clientY){
+  var rect = canvas.getBoundingClientRect();
+  var scaleX = canvas.width  / rect.width;
+  var scaleY = canvas.height / rect.height;
+  return {
+    x: (clientX - rect.left) * scaleX,
+    y: (clientY - rect.top)  * scaleY
+  };
+}
+
+function bindBlurEvents(){
+  ['t','b'].forEach(function(panel){
+    var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+
+    canvas.addEventListener('mousedown', function(e){
+      var mode = blurMode[panel];
+      var xy   = getCanvasXY(canvas, e.clientX, e.clientY);
+      var W=canvas.width, H=canvas.height;
+      var zones=blurZones[panel];
+
+      // draw/pan 모두 X버튼 먼저 체크
+      var W0=canvas.width, H0=canvas.height, zones0=blurZones[panel];
+      var hitX0=-1;
+      for(var ii=zones0.length-1;ii>=0;ii--){
+        var z0=zones0[ii];
+        var zx0=z0.rx*W0, zy0=z0.ry*H0, zw0=z0.rw*W0;
+        if(xy.x>=zx0+zw0-18 && xy.x<=zx0+zw0 && xy.y>=zy0 && xy.y<=zy0+18){ hitX0=ii; break; }
+      }
+      if(hitX0>=0){
+        blurZones[panel].splice(hitX0,1);
+        if(blurSelected[panel]>=blurZones[panel].length) blurSelected[panel]=-1;
+        if(panel==='t') renderThumb(); else renderBody();
+        e.preventDefault(); e.stopPropagation(); return;
+      }
+
+      if(mode === 'draw'){
+        // 기존 영역 위면 이동 우선
+        var W1=canvas.width,H1=canvas.height,zones1=blurZones[panel];
+        var hitMove1=-1;
+        for(var j=zones1.length-1;j>=0;j--){
+          var z1=zones1[j];
+          var zx1=z1.rx*W1,zy1=z1.ry*H1,zw1=z1.rw*W1,zh1=z1.rh*H1;
+          if(xy.x>=zx1&&xy.x<=zx1+zw1&&xy.y>=zy1&&xy.y<=zy1+zh1){hitMove1=j;break;}
+        }
+        if(hitMove1>=0){
+          var zm=zones1[hitMove1];
+          blurMove[panel]={zoneIdx:hitMove1,startX:xy.x,startY:xy.y,origRx:zm.rx,origRy:zm.ry};
+          blurSelected[panel]=hitMove1;
+          canvas.style.cursor='grabbing';
+          if(panel==='t') renderThumb(); else renderBody();
+          e.preventDefault(); e.stopPropagation(); return;
+        }
+        // 빈 곳이면 새 영역 그리기
+        blurDrag[panel]={sx:xy.x, sy:xy.y, cx:xy.x, cy:xy.y};
+        e.preventDefault(); e.stopPropagation();
+        return;
+      }
+
+      // pan 모드: X버튼 또는 영역 드래그 먼저 체크
+      var hitX=-1, hitMove=-1;
+      for(var i=zones.length-1;i>=0;i--){
+        var z=zones[i];
+        var zx=z.rx*W, zy=z.ry*H, zw=z.rw*W, zh=z.rh*H;
+        // X버튼: 우상단 18x18 (canvas px 기준)
+        if(xy.x>=zx+zw-18 && xy.x<=zx+zw && xy.y>=zy && xy.y<=zy+18){ hitX=i; break; }
+        // 영역 내부
+        if(xy.x>=zx && xy.x<=zx+zw && xy.y>=zy && xy.y<=zy+zh){ hitMove=i; break; }
+      }
+
+      if(hitX>=0){
+        // X 버튼: 삭제
+        blurZones[panel].splice(hitX,1);
+        if(blurSelected[panel]>=blurZones[panel].length) blurSelected[panel]=-1;
+        if(panel==='t') renderThumb(); else renderBody();
+        e.preventDefault(); e.stopPropagation();
+      } else if(hitMove>=0){
+        // 영역 이동
+        var z=zones[hitMove];
+        blurMove[panel]={zoneIdx:hitMove, startX:xy.x, startY:xy.y, origRx:z.rx, origRy:z.ry};
+        blurSelected[panel]=hitMove;
+        canvas.style.cursor='grabbing';
+        if(panel==='t') renderThumb(); else renderBody();
+        e.preventDefault(); e.stopPropagation();
+      }
+      // 빈 곳이면 아무것도 안 하고 pan으로 흘러감
+    }, true);
+
+    canvas.addEventListener('touchstart', function(e){
+      var mode=blurMode[panel];
+      var t=e.touches[0];
+      var xy=getCanvasXY(canvas,t.clientX,t.clientY);
+      var W=canvas.width,H=canvas.height,zones=blurZones[panel];
+
+      var W0t=canvas.width,H0t=canvas.height,zones0t=blurZones[panel];
+      var hitX0t=-1;
+      for(var ii=zones0t.length-1;ii>=0;ii--){
+        var z0t=zones0t[ii];
+        var zx0t=z0t.rx*W0t,zy0t=z0t.ry*H0t,zw0t=z0t.rw*W0t;
+        if(xy.x>=zx0t+zw0t-18&&xy.x<=zx0t+zw0t&&xy.y>=zy0t&&xy.y<=zy0t+18){hitX0t=ii;break;}
+      }
+      if(hitX0t>=0){
+        blurZones[panel].splice(hitX0t,1);
+        if(blurSelected[panel]>=blurZones[panel].length)blurSelected[panel]=-1;
+        if(panel==='t')renderThumb();else renderBody();
+        e.preventDefault();e.stopPropagation();return;
+      }
+      if(mode==='draw'){
+        var W1t=canvas.width,H1t=canvas.height,zones1t=blurZones[panel];
+        var hm1t=-1;
+        for(var j=zones1t.length-1;j>=0;j--){
+          var z1t=zones1t[j];
+          var zx1t=z1t.rx*W1t,zy1t=z1t.ry*H1t,zw1t=z1t.rw*W1t,zh1t=z1t.rh*H1t;
+          if(xy.x>=zx1t&&xy.x<=zx1t+zw1t&&xy.y>=zy1t&&xy.y<=zy1t+zh1t){hm1t=j;break;}
+        }
+        if(hm1t>=0){
+          var zm1t=zones1t[hm1t];
+          blurMove[panel]={zoneIdx:hm1t,startX:xy.x,startY:xy.y,origRx:zm1t.rx,origRy:zm1t.ry};
+          blurSelected[panel]=hm1t;
+          if(panel==='t')renderThumb();else renderBody();
+          e.preventDefault();e.stopPropagation();return;
+        }
+        blurDrag[panel]={sx:xy.x,sy:xy.y,cx:xy.x,cy:xy.y};
+        e.preventDefault();e.stopPropagation();return;
+      }
+      var hitX=-1,hitMove=-1;
+      for(var i=zones.length-1;i>=0;i--){
+        var z=zones[i];
+        var zx=z.rx*W,zy=z.ry*H,zw=z.rw*W,zh=z.rh*H;
+        if(xy.x>=zx+zw-18&&xy.x<=zx+zw&&xy.y>=zy&&xy.y<=zy+18){hitX=i;break;}
+        if(xy.x>=zx&&xy.x<=zx+zw&&xy.y>=zy&&xy.y<=zy+zh){hitMove=i;break;}
+      }
+      if(hitX>=0){
+        blurZones[panel].splice(hitX,1);
+        if(blurSelected[panel]>=blurZones[panel].length)blurSelected[panel]=-1;
+        if(panel==='t')renderThumb();else renderBody();
+        e.preventDefault();e.stopPropagation();
+      } else if(hitMove>=0){
+        var z2=zones[hitMove];
+        blurMove[panel]={zoneIdx:hitMove,startX:xy.x,startY:xy.y,origRx:z2.rx,origRy:z2.ry};
+        blurSelected[panel]=hitMove;
+        if(panel==='t')renderThumb();else renderBody();
+        e.preventDefault();e.stopPropagation();
+      }
+    }, {capture:true, passive:false});
+  });
+
+  window.addEventListener('mousemove', function(e){
+    ['t','b'].forEach(function(panel){
+      var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+      var xy = getCanvasXY(canvas, e.clientX, e.clientY);
+      if(blurDrag[panel]){
+        blurDrag[panel].cx = xy.x;
+        blurDrag[panel].cy = xy.y;
+        if(panel==='t') renderThumb(); else renderBody();
+      } else if(blurMove[panel]){
+        var mv = blurMove[panel];
+        var W=canvas.width, H=canvas.height;
+        var dx=(xy.x-mv.startX)/W, dy=(xy.y-mv.startY)/H;
+        var z=blurZones[panel][mv.zoneIdx];
+        z.rx = Math.max(0, Math.min(1-z.rw, mv.origRx+dx));
+        z.ry = Math.max(0, Math.min(1-z.rh, mv.origRy+dy));
+        if(panel==='t') renderThumb(); else renderBody();
+      }
+    });
+  });
+
+  window.addEventListener('mouseup', function(e){
+    ['t','b'].forEach(function(panel){
+      if(blurMove[panel]){
+        blurMove[panel]=null;
+        var cv=document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+        cv.style.cursor=blurMode[panel]==='draw'?'crosshair':'grab';
+      }
+      if(!blurDrag[panel]) return;
+      var drag = blurDrag[panel];
+      var x = Math.min(drag.sx, drag.cx);
+      var y = Math.min(drag.sy, drag.cy);
+      var w = Math.abs(drag.cx - drag.sx);
+      var h = Math.abs(drag.cy - drag.sy);
+      if(w > 5 && h > 5){
+        // 캔버스 px → 비율로 저장
+        var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+        blurZones[panel].push({
+          rx: x/canvas.width, ry: y/canvas.height,
+          rw: w/canvas.width, rh: h/canvas.height
+        });
+      }
+      blurDrag[panel] = null;
+      if(panel==='t') renderThumb(); else renderBody();
+    });
+  });
+
+  window.addEventListener('touchmove', function(e){
+    ['t','b'].forEach(function(panel){
+      if(!blurDrag[panel]) return;
+      var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+      var t = e.touches[0];
+      var xy = getCanvasXY(canvas, t.clientX, t.clientY);
+      blurDrag[panel].cx = xy.x;
+      blurDrag[panel].cy = xy.y;
+      if(panel==='t') renderThumb(); else renderBody();
+      e.preventDefault();
+    });
+  }, {passive:false});
+
+  window.addEventListener('touchend', function(e){
+    ['t','b'].forEach(function(panel){
+      if(!blurDrag[panel]) return;
+      var drag = blurDrag[panel];
+      var canvas = document.getElementById(panel==='t'?'thumbCanvas':'bodyCanvas');
+      var x=Math.min(drag.sx,drag.cx), y=Math.min(drag.sy,drag.cy);
+      var w=Math.abs(drag.cx-drag.sx), h=Math.abs(drag.cy-drag.sy);
+      if(w>5&&h>5){
+        blurZones[panel].push({
+          rx:x/canvas.width, ry:y/canvas.height,
+          rw:w/canvas.width, rh:h/canvas.height
+        });
+      }
+      blurDrag[panel]=null;
+      if(panel==='t') renderThumb(); else renderBody();
+    });
+  });
+
+  // 강도 슬라이더
+  document.getElementById('blur-str-t').addEventListener('input', function(){ document.getElementById('blur-str-t-v').textContent=this.value; renderThumb(); });
+  document.getElementById('blur-str-b').addEventListener('input', function(){ document.getElementById('blur-str-b-v').textContent=this.value; renderBody(); });
+}
+
+
+
+function blurRegionFeathered(ctx, x, y, w, h, strength){
+  if(w<4||h<4) return;
+  var pad = strength * 2;
+  var src = document.createElement('canvas');
+  src.width=w; src.height=h;
+  src.getContext('2d').drawImage(ctx.canvas, x,y,w,h, 0,0,w,h);
+  var blr = document.createElement('canvas');
+  blr.width=w; blr.height=h;
+  var bc = blr.getContext('2d');
+  bc.filter = 'blur('+strength+'px)';
+  bc.drawImage(src, -pad,-pad, w+pad*2, h+pad*2);
+  bc.filter = 'none';
+  ctx.drawImage(blr, x,y);
+}
+function applyBlurZones(ctx, panel, W, H){
+  var zones = blurZones[panel].slice();
+  var drag  = blurDrag[panel];
+  var strEl = document.getElementById(panel==='t'?'blur-str-t':'blur-str-b');
+  var strength = strEl ? parseInt(strEl.value) : 15;
+
+  // 드래그 중 임시 영역 추가
+  if(drag){
+    var x0=Math.min(drag.sx,drag.cx), y0=Math.min(drag.sy,drag.cy);
+    var w0=Math.abs(drag.cx-drag.sx), h0=Math.abs(drag.cy-drag.sy);
+    // 임시는 비율 아닌 px로 직접 그리기 (선택박스만)
+    ctx.save();
+    ctx.strokeStyle='rgba(250,205,46,0.95)';
+    ctx.lineWidth=2; ctx.setLineDash([5,3]);
+    ctx.strokeRect(x0, y0, w0, h0);
+    ctx.restore();
+  }
+
+  zones.forEach(function(z, zi){
+    var x=Math.round(z.rx*W), y=Math.round(z.ry*H);
+    var w=Math.round(z.rw*W), h=Math.round(z.rh*H);
+    if(w<4||h<4) return;
+    blurRegionFeathered(ctx, x, y, w, h, strength);
+    // 테두리 + 번호 + X버튼
+    var isSelected = (blurSelected[panel] === zi && blurMode[panel]==='move');
+    ctx.save();
+    // 테두리
+    ctx.strokeStyle = isSelected ? 'rgba(255,80,80,0.95)' : 'rgba(250,205,46,0.55)';
+    ctx.lineWidth   = isSelected ? 2.5 : 1.5;
+    ctx.setLineDash(isSelected ? [] : [4,3]);
+    ctx.strokeRect(x,y,w,h);
+    // 번호 배지
+    var badgeColor = isSelected ? 'rgba(255,80,80,0.9)' : 'rgba(250,205,46,0.85)';
+    ctx.fillStyle=badgeColor; ctx.fillRect(x,y,18,16);
+    ctx.fillStyle='#171717'; ctx.font='bold 11px Arial';
+    ctx.textBaseline='top'; ctx.setLineDash([]);
+    ctx.fillText(zi+1, x+4, y+2);
+    // X 버튼 (우상단)
+    ctx.fillStyle='rgba(50,50,50,0.65)'; ctx.fillRect(x+w-16,y,16,16);
+    ctx.fillStyle='#fff'; ctx.font='bold 12px Arial';
+    ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText('✕', x+w-8, y+8);
+    ctx.textAlign='left'; ctx.textBaseline='top';
+    ctx.restore();
+  });
+}
+
+function applyBlurZonesOutput(ctx, panel, W, H){
+  var zones = blurZones[panel];
+  if(!zones||!zones.length) return;
+  var strEl = document.getElementById(panel==='t'?'blur-str-t':'blur-str-b');
+  var strength = strEl ? Math.round(parseInt(strEl.value)*(W/600)) : 20;
+  strength = Math.max(5, Math.min(strength, 80));
+  zones.forEach(function(z){
+    var x=Math.round(z.rx*W), y=Math.round(z.ry*H);
+    var w=Math.round(z.rw*W), h=Math.round(z.rh*H);
+    blurRegionFeathered(ctx, x, y, w, h, strength);
+  });
+}
+// ═══════════════════════════════════
+
+// ── 캔버스 pan + 영역블러 통합 이벤트 ──
+var panState = {active:false, key:null, startX:0, startY:0, startOx:0, startOy:0, renderFn:null};
+
+function getCanvasPanKey(canvas, clientX, clientY){
+  var rect = canvas.getBoundingClientRect();
+  var scaleX = canvas.width / rect.width;
+  var x = (clientX - rect.left) * scaleX;
+  var isThumb = canvas.id === 'thumbCanvas';
+  if(isThumb){
+    if(thumbCount===2 && x > canvas.width/2) return {key:'t2', zoneW:canvas.width/2, zoneH:canvas.height};
+    return {key:'t1', zoneW:thumbCount===2?canvas.width/2:canvas.width, zoneH:canvas.height};
+  } else {
+    if(bodyMode==='side-by-side' && x > canvas.width/2) return {key:'b2', zoneW:canvas.width/2, zoneH:canvas.height};
+    return {key:'b1', zoneW:bodyMode==='side-by-side'?canvas.width/2:canvas.width, zoneH:canvas.height};
+  }
+}
+
+function bindCanvasEvents(canvasId, renderFn){
+  var canvas = document.getElementById(canvasId);
+  if(!canvas) return;
+  var panel = canvasId==='thumbCanvas' ? 't' : 'b';
+
+  canvas.addEventListener('mousedown', function(e){
+    if(blurMode[panel]==='draw') return; // 블러모드면 pan 무시
+    var info = getCanvasPanKey(canvas, e.clientX, e.clientY);
+    var imgs = panel==='t' ? thumbImgs : bodyImgs;
+    var idx = (info.key==='t2'||info.key==='b2') ? 1 : 0;
+    if(!imgs[idx]) return;
+    panState.active=true; panState.key=info.key;
+    panState.zoneW=info.zoneW; panState.zoneH=info.zoneH;
+    panState.startX=e.clientX; panState.startY=e.clientY;
+    panState.startOx=state[info.key].ox||0;
+    panState.startOy=state[info.key].oy||0;
+    panState.renderFn=renderFn;
+    canvas.style.cursor='grabbing';
+    e.preventDefault();
+  });
+
+  canvas.addEventListener('touchstart', function(e){
+    if(blurMode[panel]==='draw') return;
+    var t=e.touches[0];
+    var info=getCanvasPanKey(canvas,t.clientX,t.clientY);
+    var imgs=panel==='t'?thumbImgs:bodyImgs;
+    var idx=(info.key==='t2'||info.key==='b2')?1:0;
+    if(!imgs[idx]) return;
+    panState.active=true; panState.key=info.key;
+    panState.zoneW=info.zoneW; panState.zoneH=info.zoneH;
+    panState.startX=t.clientX; panState.startY=t.clientY;
+    panState.startOx=state[info.key].ox||0;
+    panState.startOy=state[info.key].oy||0;
+    panState.renderFn=renderFn;
+    e.preventDefault();
+  },{passive:false});
+}
+
+function initPanEvents(){
+  window.addEventListener('mousemove', function(e){
+    if(!panState.active) return;
+    var canvas=document.getElementById(panState.key[0]==='t'?'thumbCanvas':'bodyCanvas');
+    var rect=canvas.getBoundingClientRect();
+    var sx=canvas.width/rect.width, sy=canvas.height/rect.height;
+    var dx=(e.clientX-panState.startX)*sx/panState.zoneW;
+    var dy=(e.clientY-panState.startY)*sy/panState.zoneH;
+    state[panState.key].ox=panState.startOx+dx;
+    state[panState.key].oy=panState.startOy+dy;
+    panState.renderFn();
+  });
+  window.addEventListener('mouseup', function(){
+    if(!panState.active) return;
+    panState.active=false;
+    var canvas=document.getElementById(panState.key[0]==='t'?'thumbCanvas':'bodyCanvas');
+    canvas.style.cursor='grab';
+  });
+  window.addEventListener('touchmove', function(e){
+    if(!panState.active) return;
+    var t=e.touches[0];
+    var canvas=document.getElementById(panState.key[0]==='t'?'thumbCanvas':'bodyCanvas');
+    var rect=canvas.getBoundingClientRect();
+    var sx=canvas.width/rect.width, sy=canvas.height/rect.height;
+    var dx=(t.clientX-panState.startX)*sx/panState.zoneW;
+    var dy=(t.clientY-panState.startY)*sy/panState.zoneH;
+    state[panState.key].ox=panState.startOx+dx;
+    state[panState.key].oy=panState.startOy+dy;
+    panState.renderFn();
+    e.preventDefault();
+  },{passive:false});
+  window.addEventListener('touchend', function(){
+    panState.active=false;
+  });
+}
+// ── pan + blur 끝 ──
+function toggleGuide(){
+  var d=document.getElementById('guide-detail');
+  var btn=document.querySelector('#guide-banner button');
+  if(d.style.display==='none'){
+    d.style.display='block';
+    btn.textContent='사용법 닫기 ▲';
+  } else {
+    d.style.display='none';
+    btn.textContent='사용법 보기 ▼';
+  }
+}
+
+function setThumbRatio(h){
+  THUMB_H = h;
+  document.getElementById('ratio-630').classList.toggle('active', h===630);
+  document.getElementById('ratio-676').classList.toggle('active', h===676);
+  // 미리보기 캔버스 비율 업데이트
+  var canvas = document.getElementById('thumbCanvas');
+  canvas.height = Math.round(canvas.width * h / THUMB_W);
+  document.getElementById('thumb-ratio-info').innerHTML =
+    '섬네일: <span>1200 × '+h+'px</span>';
+  renderThumb();
+}
+</script>
+</body>
+</html>
